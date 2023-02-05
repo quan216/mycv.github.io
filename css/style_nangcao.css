@@ -1,0 +1,736 @@
+/* universal setting */
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 
+      96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 
+       / 52 / 62 / 74 / 86 / 98
+
+      icon style="font-size: 25px;"
+
+
+      COLOR  system
+      Main color: #364fc7  grey color:#f8f9fa text color #343a40
+
+*/
+
+/* UTILITIES */
+.bg-grey {
+  background: #f8f9fa;
+}
+
+section > .container {
+  width: 1170px;
+  margin: 0 auto;
+  /* display: ; */
+  padding: 30px 50px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 32px;
+  word-spacing: 0.5;
+}
+
+/* center text in grid element */
+.section-title,
+.section-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.align-left {
+  align-items: start;
+  justify-content: start;
+}
+
+/* Icon styling */
+.section-icon {
+  color: #364fc7;
+  transform: scale(3);
+}
+
+/* #nav-bar {
+  text-align: center;
+} */
+
+/* set default font for all html content */
+
+html {
+  font-family: "open_sansregular", sans-serif;
+  color: #343a40;
+}
+
+/* BANER */
+.banner {
+  position: relative;
+  /* background-color: brown; */
+  /* setting bacground img and linear for banner   
+      rgba(36, 35, 35, 0.6),
+      rgba(36, 35, 35, 0.6)*/
+  background-image: linear-gradient(
+      rgba(54, 78, 199, 0.5),
+      rgba(54, 78, 199, 0.1)
+    ),
+    url(/images/banner.jpg);
+  background-size: cover;
+  color: #f1f3f5;
+  text-align: center;
+  /* make banner view = 70% view port */
+  height: 50vh;
+}
+
+/* ****setting the Name style***** */
+.banner h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  word-spacing: 4px;
+  margin-top: 48px;
+  margin-bottom: 12px;
+}
+
+/* ///////////NVIGATION BAR///////////////// */
+.nav-bar {
+  /* background-color: pink; */
+  position: relative;
+}
+.nav-bar-container {
+  /* max-width: 1170px; */
+  /* width: auto; */
+  display: grid;
+  align-items: center;
+  align-content: center;
+  padding: 0 48px;
+  /* grid-template-columns: repeat(5, auto); */
+  /* grid-template-columns: repeat(5, auto-fill(minmax(40px, 1fr))); */
+  grid-template-columns: repeat(5, minmax(30px, 1fr));
+}
+#nav-bar {
+  /* width: auto; */
+  padding: 0 48px;
+}
+.nav-bar-element {
+  /* background-color: #748ffc; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-collapse: collapse;
+  height: 60px;
+}
+
+.nav-bar-element:nth-child(3) {
+  grid-column: 4/5;
+}
+
+.very-left,
+.very-right {
+  border-left: 1px solid #adb5bd;
+  border-right: 1px solid #adb5bd;
+}
+
+.nav-bar-link::before {
+  color: #364fc7;
+}
+
+/* .nav-bar-element h3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.nav-bar-element span {
+  font-size: 12px;
+  color: #868e96;
+} */
+
+/* ///////////////////////////////////////// */
+/* PHAN NANG CAO */
+.avatar {
+  position: absolute;
+
+  /* centering avatar picture */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 150px;
+  width: 150px;
+
+  /* circling picture */
+  border-radius: 50%;
+  border: 8px solid #fff;
+}
+
+/* ///////////////////////////////////// */
+
+/* setting text style of nav bar link */
+
+.nav-bar-link {
+  /* background-color: palevioletred; */
+  color: #212529;
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 16px;
+}
+
+.nav-bar-link i {
+  color: #364fc7;
+}
+
+.nav-bar-link:link,
+.nav-bar-link:visited {
+  text-decoration: none;
+}
+
+.nav-bar-link:hover {
+  /* col  or: #fff; */
+  background-color: #edf2ff;
+}
+
+/* 2 columns of ABOUT ID */
+/*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 
+      96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 
+       / 52 / 62 / 74 / 86 / 98
+
+      icon style="font-size: 25px;"
+
+
+      COLOR  system
+      Main color: #364fc7  grey color:#f8f9fa text color #343a40
+
+*/
+/*  */
+/* .about-element {
+  width: 50%;
+} */
+
+/*  */
+
+/* UTILITIES */
+.bg-grey {
+  background: #f8f9fa;
+}
+
+section > .container {
+  width: 1170px;
+  margin: 0 auto;
+  /* display: ; */
+  padding: 30px 50px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 32px;
+  word-spacing: 0.5;
+}
+
+/* center text in grid element */
+.section-title,
+.section-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.align-left {
+  align-items: start;
+  justify-content: start;
+}
+
+/* Icon styling */
+.section-icon {
+  color: #364fc7;
+  transform: scale(3);
+}
+
+/* #nav-bar {
+  text-align: center;
+} */
+
+/* set default font for all html content */
+
+html {
+  font-family: "open_sansregular", sans-serif;
+  color: #343a40;
+}
+
+/* BANER */
+.banner {
+  position: relative;
+  /* background-color: brown; */
+  /* setting bacground img and linear for banner   
+      rgba(36, 35, 35, 0.6),
+      rgba(36, 35, 35, 0.6)*/
+  background-image: linear-gradient(
+      rgba(54, 78, 199, 0.5),
+      rgba(54, 78, 199, 0.1)
+    ),
+    url(/images/banner.jpg);
+  background-size: cover;
+  color: #f1f3f5;
+  text-align: center;
+  /* make banner view = 70% view port */
+  height: 50vh;
+}
+
+/* ****setting the Name style***** */
+.banner h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  word-spacing: 4px;
+  margin-top: 48px;
+  margin-bottom: 12px;
+}
+
+/* ///////////NVIGATION BAR///////////////// */
+.nav-bar {
+  /* background-color: pink; */
+  position: relative;
+}
+.nav-bar-container {
+  /* max-width: 1170px; */
+  /* width: auto; */
+  display: grid;
+  align-items: center;
+  align-content: center;
+  padding: 0 32px;
+  /* grid-template-columns: repeat(5, auto); */
+  /* grid-template-columns: repeat(5, auto-fill(minmax(40px, 1fr))); */
+  grid-template-columns: 4fr 4fr 10px 4fr 4fr;
+}
+#nav-bar {
+  /* width: auto; */
+  padding: 0 48px;
+}
+.nav-bar-element {
+  /* background-color: #748ffc; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-collapse: collapse;
+  height: 60px;
+}
+
+.nav-bar-element:nth-child(3) {
+  grid-column: 4/5;
+}
+
+.very-left,
+.very-right {
+  border-left: 1px solid #adb5bd;
+  border-right: 1px solid #adb5bd;
+}
+
+.nav-bar-link::before {
+  color: #364fc7;
+}
+
+/* .nav-bar-element h3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.nav-bar-element span {
+  font-size: 12px;
+  color: #868e96;
+} */
+
+/* ///////////////////////////////////////// */
+/* PHAN NANG CAO */
+.avatar {
+  position: absolute;
+
+  /* centering avatar picture */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 150px;
+  width: 150px;
+
+  /* circling picture */
+  border-radius: 50%;
+  border: 8px solid #fff;
+}
+
+/* ///////////////////////////////////// */
+
+/* setting text style of nav bar link */
+
+.nav-bar-link {
+  /* background-color: palevioletred; */
+  color: #212529;
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 16px;
+}
+
+.nav-bar-link i {
+  color: #364fc7;
+}
+
+.nav-bar-link:link,
+.nav-bar-link:visited {
+  text-decoration: none;
+}
+
+.nav-bar-link:hover {
+  /* col  or: #fff; */
+  background-color: #edf2ff;
+}
+
+/* 2 columns of ABOUT ID */
+/*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 
+      96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 
+       / 52 / 62 / 74 / 86 / 98
+
+      icon style="font-size: 25px;"
+
+
+      COLOR  system
+      Main color: #364fc7  grey color:#f8f9fa text color #343a40
+
+*/
+
+.about-container {
+  padding: 50px 50px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(90px, 1fr));
+  /* grid-template-columns: 1fr 1fr; */
+  /* grid-template-columns: repeat(2, minmax(90px, 1fr)); */
+}
+.target {
+  /* background-color: pink; */
+  place-self: start end;
+  width: 50%;
+  /* padding-left: 62px; */
+}
+
+/* Stylling font and text for p and td */
+p {
+  font-size: 16px;
+  line-height: 2;
+}
+
+.personal-info ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+
+  /* gap: 6px; */
+}
+
+ul li {
+  padding: 6px;
+  font-size: 18px;
+}
+/* GRID LAYOUT FOR JOB-INFO GRID LÝ LỊCH */
+.job-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: 1fr 340px 340px; */
+  /* dam bao cac box co do cao bang nhau khong phan biet luong noi dung, cao bang box cao nhat, hang thu 2 thap hon hang 1 */
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+    "H1 H2 H3"
+    "F1 F2 F3";
+  gap: 8px 24px;
+}
+
+/* layout for title and icon and text */
+
+.job-info-box {
+  margin-bottom: 12px;
+  height: 98%;
+
+  border: 1px solid #ced4da;
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  grid-template-rows: 100px auto;
+  /* align-items: start; */
+  justify-content: center;
+}
+
+.section-content {
+  grid-area: 2/1/-1/-1;
+}
+
+/* ******************** */
+.experience {
+  grid-area: H1;
+}
+.sub-title {
+  font-size: 16px;
+  font-weight: 600;
+  /* margin: 0 0 8px 0; */
+  padding: 0 0 14px;
+}
+
+/* / 16 / 24 / 32 / 48 / */
+/* Padding for the  */
+.info-box-content {
+  position: relative;
+  padding: 32px 8px 24px 48px;
+}
+
+.sub-title::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #364fc7;
+  /* border: 2px solid black; */
+  border: thick #364fc7;
+  border-radius: 50%;
+  top: 40px;
+  bottom: 0px;
+  left: 30px;
+  z-index: 1; /*put black disk above vertical ruler*/
+}
+
+.info-box-date {
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.hien-tai {
+  background-color: #5c7cfa;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 12px;
+}
+.skill {
+  grid-area: H2;
+}
+
+.language {
+  grid-area: H3;
+}
+
+.hobby {
+  grid-area: F3;
+}
+
+.education {
+  grid-area: F2;
+}
+
+.activities {
+  grid-area: F1;
+}
+
+/* make level bar */
+.level-bar {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  gap: 8px;
+}
+
+.level-1 {
+  width: 48px;
+  border-bottom: 1.5px solid #748ffc;
+}
+
+.level-2 {
+  width: 48px;
+  border-bottom: 1.5px solid #5c7cfa;
+}
+
+.level-3 {
+  width: 48px;
+  border-bottom: 1.5px solid #4263eb;
+}
+
+.hidden-bar {
+  width: 48px;
+  border-bottom: 1.5px solid #dee2e6;
+}
+
+.bolder-bar {
+  border-bottom: 3px solid #4263eb;
+}
+/* *********************************** */
+/* .hobby-content {
+  display: flex;
+  /* align-items: center; 
+  justify-content: center;
+  gap: 8px;
+} */
+
+.hobby-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding: 4px;
+}
+
+.hobby-element p {
+  text-align: center;
+  text-justify: center;
+  word-spacing: 0.3px;
+  font-size: 18px;
+}
+.icon {
+  height: 40px;
+  width: 40px;
+  border: 1px solid #4263eb;
+  border-radius: 50%;
+  transform: scale(2);
+  margin-bottom: 24px;
+  background: none;
+  /* cursor: pointer; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hobby-icon {
+  color: #4263eb;
+}
+
+/* Hobby icon rerange */
+.hobby-content {
+  /* grid-area: 1/2/-1/-1; */
+  grid-template-columns: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-rows: 145px 145px;
+  justify-content: start;
+  padding-top: 48px;
+  /* align-items: end; */
+}
+
+/* CERTIFICATE */
+/* 16 / 24 / 32 / 48 / 64 / 80 / 
+      96 / 128 */
+
+.cert-img {
+  width: 190px;
+  height: auto;
+  padding-left: 0px;
+}
+
+.upper-text {
+  text-transform: uppercase;
+}
+
+.bottom-line {
+  border-bottom: 1px solid #ffa94d;
+}
+.left-line {
+  border-left: 1px solid #ffa94d;
+}
+
+/* PROJECT */
+/* CERTIFICATE */
+/* 16 / 24 / 32 / 48 / 64 / 80 / 
+      96 / 128 */
+.flex-container {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px; */
+}
+.flex-element {
+  width: 340px;
+  border: 1px solid #ced4da;
+}
+
+.flex-element > div.sub-title {
+  padding-left: 12px;
+}
+
+.pjt-img {
+  /* width: 337px; */
+  width: 337px;
+  height: auto;
+  padding-bottom: 12px;
+}
+.pjt-detail {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  padding: 10px;
+  border-top: 1px solid #dee2e6;
+}
+.year {
+  background-color: #364fc7;
+  color: #f8f9fa;
+  padding: 0.1px 12px;
+  border-radius: 16px;
+}
+
+.icon1,
+.icon2 {
+  transform: scale(1.3);
+}
+
+/* Phai viet ca table va td neu khong duong border se bi dut doan o giua, chua hieu tai sao lai the*/
+table,
+td {
+  font-size: 14px;
+  line-height: 1.5;
+  vertical-align: top;
+  border-top: 1px solid #adb5bd;
+  border-collapse: collapse;
+  padding: 4px;
+}
+
+/* SNS */
+/* SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 
+96 / 128 */
+
+.SNS {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.SNS li {
+  display: flex;
+  gap: 18px;
+  /* transform: scale(2); */
+}
+
+.SNS-icon {
+  color: #4263eb;
+  transform: scale(3);
+}
+.SNS-icon:link,
+.SNS-icon:visited {
+  text-decoration: none;
+}
+
+.SNS-icon:hover {
+  cursor: pointer;
+  color: #364fc7;
+}

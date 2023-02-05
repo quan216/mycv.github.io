@@ -1,0 +1,526 @@
+/* universal setting */
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 
+      96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 
+       / 52 / 62 / 74 / 86 / 98
+
+      icon style="font-size: 25px;"
+
+
+      COLOR  system
+      Main color: #364fc7  grey color:#f8f9fa text color #343a40
+
+*/
+
+.bg-grey {
+  background: #f8f9fa;
+}
+
+section > .container {
+  width: 1170px;
+  margin: 0 auto;
+  /* display: ; */
+  padding: 30px 50px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 32px;
+  word-spacing: 0.5;
+}
+
+/* center text in grid element */
+.section-title,
+.section-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.align-left {
+  align-items: start;
+  justify-content: start;
+}
+
+/* Icon styling */
+.section-icon {
+  color: #364fc7;
+  transform: scale(3);
+}
+
+#nav-bar {
+  text-align: center;
+}
+
+/* set default font for all html content */
+
+html {
+  font-family: "open_sansregular", sans-serif;
+  color: #343a40;
+}
+
+/* BANER */
+.banner {
+  position: relative;
+  /* background-color: brown; */
+  /* setting bacground img and linear for banner   
+      rgba(36, 35, 35, 0.6),
+      rgba(36, 35, 35, 0.6)*/
+  background-image: linear-gradient(
+      rgba(54, 78, 199, 0.5),
+      rgba(54, 78, 199, 0.1)
+    ),
+    url(/images/banner.jpg);
+  background-size: cover;
+  color: #f1f3f5;
+  text-align: center;
+  /* make banner view = 70% view port */
+  height: 50vh;
+}
+
+/* ****setting the Name style***** */
+.banner h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  word-spacing: 4px;
+  margin-top: 48px;
+  margin-bottom: 12px;
+}
+
+/* *************** */
+#nav-bar2 {
+  /* background-color: #212529; */
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+  /* width: fit-content; */
+  position: relative;
+
+  /* margin-bottom: 48px; */
+}
+
+/* ///////////////////////////////////////// */
+/* PHAN NANG CAO */
+/* nav {
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+.center-block {
+  position: absolute;
+  background-color: #364fc7;
+  height: 150px;
+  width: 150px;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50% -50%);
+} */
+
+/* 
+.nav-bar-element {
+  display: inline-block;
+  position: absolute;
+}
+
+.very-right {
+  right: 16%;
+}
+.second-right {
+  right: 32%;
+}
+
+.very-left {
+  left: 16%;
+}
+
+.second-left {
+  left: 32%;
+} */
+/* ///////////////////////////////////// */
+
+/* vertically display for center block of nav bar */
+/* .center-block {
+  flex-direction: column;
+  gap: 0;
+} */
+.nav-bar-element h3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.nav-bar-element span {
+  font-size: 12px;
+  color: #868e96;
+}
+
+/* setting text style of nav bar link */
+
+.nav-bar-link {
+  color: #212529;
+  display: inline-block;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+.nav-bar-link i {
+  color: #364fc7;
+}
+
+.nav-bar-link:link,
+.nav-bar-link:visited {
+  text-decoration: none;
+}
+
+.nav-bar-link:hover {
+  color: #fff;
+  background-color: #91a7ff;
+}
+
+/* 2 columns of ABOUT ID */
+/*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 
+      96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 
+       / 52 / 62 / 74 / 86 / 98
+
+      icon style="font-size: 25px;"
+
+
+      COLOR  system
+      Main color: #364fc7  grey color:#f8f9fa text color #343a40
+
+*/
+
+.about-container {
+  padding: 30px 50px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(90px, 1fr));
+  /* grid-template-columns: 1fr 1fr; */
+  /* grid-template-columns: repeat(2, minmax(90px, 1fr)); */
+}
+.target {
+  /* background-color: pink; */
+  place-self: start end;
+  width: 90%;
+  /* neu dung thuoc tinh nay thi height cua block target khong dieu chinh bang 1fr*/
+  padding-left: 62px;
+}
+
+.personal-info {
+  /* background-color: red; */
+  padding-left: 98px;
+  /* place-self: start center; */
+}
+
+/* Stylling font and text for p and td */
+p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.personal-info ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* GRID LAYOUT FOR JOB-INFO */
+.job-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* dam bao cac box co do cao bang nhau khong phan biet luong noi dung, cao bang box cao nhat, hang thu 2 thap hon hang 1 */
+  grid-template-rows: 1fr auto;
+
+  grid-template-areas:
+    "H1 H2 H3"
+    "F1 F2 F3";
+  gap: 8px 16px;
+}
+
+/* layout for title and icon and text */
+.job-info-box {
+  border: 1px solid #e9ecef;
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  grid-template-rows: 100px auto;
+  /* align-items: start; */
+  justify-content: center;
+}
+
+.section-content {
+  grid-area: 2/1/-1/-1;
+}
+
+/* ******************** */
+.experience {
+  grid-area: H1;
+}
+.sub-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+
+.info-box-content {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 24px;
+}
+
+.sub-title::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #364fc7;
+  /* border: 2px solid black; */
+  border: thick #364fc7;
+  border-radius: 50%;
+  top: 8px;
+  bottom: 0px;
+  left: 4px;
+  z-index: 1; /*put black disk above vertical ruler*/
+}
+
+.info-box-date {
+  font-style: italic;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+.hien-tai {
+  background-color: #364fc7;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+.skill {
+  grid-area: H2;
+}
+
+.language {
+  grid-area: H3;
+}
+
+.hobby {
+  grid-area: F3;
+}
+
+.education {
+  grid-area: F2;
+}
+
+.activities {
+  grid-area: F1;
+}
+
+/* make level bar */
+.level-bar {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  gap: 8px;
+}
+
+.level-1 {
+  width: 48px;
+  border-bottom: 1.5px solid #748ffc;
+}
+
+.level-2 {
+  width: 48px;
+  border-bottom: 1.5px solid #5c7cfa;
+}
+
+.level-3 {
+  width: 48px;
+  border-bottom: 1.5px solid #4263eb;
+}
+
+.hidden-bar {
+  width: 48px;
+  border-bottom: 1.5px solid #dee2e6;
+}
+
+.bolder-bar {
+  border-bottom: 3px solid #4263eb;
+}
+/* *********************************** */
+.hobby-content {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  /* gap: 12px; */
+}
+
+.hobby-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding: 8px;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+  border: 1px solid #4263eb;
+  border-radius: 50%;
+  transform: scale(1.5);
+  margin-bottom: 24px;
+  background: none;
+  /* cursor: pointer; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hobby-icon {
+  color: #4263eb;
+}
+
+/* CERTIFICATE */
+/* 16 / 24 / 32 / 48 / 64 / 80 / 
+      96 / 128 */
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row: 1fr auto;
+}
+
+.cert-img {
+  width: 200px;
+  height: auto;
+  padding-left: 10px;
+}
+
+.upper-text {
+  text-transform: uppercase;
+}
+
+.left-box,
+.right-box {
+  box-sizing: border-box;
+  display: inline-block;
+  /* padding-top: 32px; */
+  /* padding-bottom: 32px; */
+}
+
+.right-box {
+  vertical-align: top;
+  margin-left: 16px;
+  /* padding-right: 32px; */
+}
+
+.border-bottom {
+  padding-bottom: 48px;
+  border-bottom: 1px solid #ffe8cc;
+}
+.border-left {
+  border-left: 1px solid #ffe8cc;
+}
+.border-top {
+  padding-top: 48px;
+}
+
+/* PROJECT */
+/* CERTIFICATE */
+/* 16 / 24 / 32 / 48 / 64 / 80 / 
+      96 / 128 */
+.flex-container {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px; */
+}
+.flex-element {
+  width: 330px;
+  border: 1px solid #868e96;
+}
+
+.flex-element > div.sub-title {
+  padding-left: 12px;
+}
+
+.pjt-img {
+  width: 328px;
+  height: auto;
+}
+.pjt-detail {
+  display: flex;
+  /* justify-content: center; */
+  gap: 12px;
+  padding: 8px;
+  border-top: 1px solid #868e96;
+}
+.year {
+  background-color: #364fc7;
+  color: #f8f9fa;
+  padding: 2px 12px;
+  border-radius: 16px;
+}
+
+/* Phai viet ca table va td neu khong duong border se bi dut doan o giua */
+table,
+td {
+  font-size: 14px;
+  line-height: 1.5;
+  vertical-align: top;
+  border-top: 1px solid #868e96;
+  border-collapse: collapse;
+  padding: 4px;
+}
+
+/* SNS */
+/* SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 
+96 / 128 */
+
+.SNS {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 98px;
+}
+
+.SNS li {
+  display: flex;
+  gap: 18px;
+  /* transform: scale(2); */
+}
+
+.SNS-icon {
+  color: #4263eb;
+  transform: scale(3);
+}
+.SNS-icon:link,
+.SNS-icon:visited {
+  text-decoration: none;
+}
+
+.SNS-icon:hover {
+  cursor: pointer;
+  color: #364fc7;
+}

@@ -1,0 +1,51 @@
+/* Tablets */
+/* @media screen and (max-width: 890px)  */
+/* @include media-breakpoint-down(md)  */
+@media (max-width: 768px) {
+  .nav-bar-container {
+    padding: 0;
+  }
+
+  .avatar {
+    display: none;
+  }
+
+  .about-element {
+    width: 100%;
+  }
+
+  /* nav-bar border */
+  .second-left {
+    border-right: 1px solid #adb5bd;
+  }
+
+  .second-right {
+    border-left: 1px solid #adb5bd;
+  }
+
+  .flex-element {
+    width: 250px;
+  }
+
+  /* About */
+  .about-element {
+    width: auto;
+  }
+
+  /* Project */
+  .pjt-detail {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 10px 0 0 10px;
+  }
+
+  .pjt-position {
+    grid-column: 2;
+    padding-left: 0;
+  }
+  .icon-title {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+  }
+}
