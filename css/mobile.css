@@ -2,15 +2,16 @@
 /* mobile */
 /* @media screen and (max-width: 600px)  */
 /* @include media-breakpoint-down(sm)  */
-@media (max-width: 576px) {
+@media (max-width: 767px) {
   /* Nav-bar */
+
   .nav-bar-container {
     display: block;
     padding-left: 10px;
   }
 
   #nav-bar {
-    /* width: auto; */
+    /* width: auto;*/
     padding: 0 8px;
   }
 
@@ -21,13 +22,32 @@
     height: 40px;
   }
 
+  /* alternative nav-bar stylling */
+  /* .nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-bar .avatar {
+    display: none;
+  }
+
+  .nav-bar-container {
+    width: 100%;
+  }
+
+  .nav-bar-element {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
   /* About */
   .container,
   .container-sm {
     max-width: none;
   }
-
-  .align-left {
+  */ .align-left {
     padding-left: 0 !important;
     padding-bottom: 10px;
     padding-top: 40px;

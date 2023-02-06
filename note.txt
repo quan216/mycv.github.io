@@ -1,0 +1,50 @@
+<!-- ALTERNATIVE nav-bar code -->
+    <!-- <section>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/images/My_avatar2.jpeg"
+            alt="avatar"
+            class="avatar d-inline-block align-top"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                >Thông tin <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Lý lịch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Chứng chỉ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dự án</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section> -->
+    <!-- This code uses the navbar class from Bootstrap to create a responsive
+    navigation bar with a toggle button for small screens. The logo is added as
+    a navbar-brand, and the navigation links are in a navbar-nav unordered list.
+    The toggle button is created using the navbar-toggler class, and the toggle
+    functionality is added using the data-toggle and data-target attributes.
+    This code is more semantically correct, easier to read, and easier to
+    maintain than the previous code. It also uses the built-in responsive
+    behavior of Bootstrap, so it will work well on all screen sizes without the
+    need for additional media queries. -->
