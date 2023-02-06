@@ -29,7 +29,8 @@
   .container {
     max-width: 500px;
   }
-  */ .align-left {
+
+  .align-left {
     padding-left: 0 !important;
     padding-bottom: 10px;
     padding-top: 40px;
