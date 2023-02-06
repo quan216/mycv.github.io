@@ -29,7 +29,8 @@
 
   /* fix container width with mobile screen*/
   .container {
-    max-width: 500px;
+    max-width: 400px;
+    margin: 30px 20px;
   }
 
   .align-left {
