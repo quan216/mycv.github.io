@@ -23,9 +23,11 @@
   }
 
   /* About */
-  .about-element {
+  /* .about-element {
     max-width: 500px;
-  }
+  } */
+
+  /* fix container width with mobile screen*/
   .container {
     max-width: 500px;
   }
