@@ -86,7 +86,12 @@
     align-items: flex-start;
   }
 
-  li {
+  .SNS {
+    margin: 0 auto;
+    gap: 10px;
+  }
+
+  .SNS li {
     display: flex;
     flex-direction: column;
     text-align: center;
