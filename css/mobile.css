@@ -1,7 +1,7 @@
 /* MEDIA QUERY */
 /* mobile */
-/* @media screen and (max-width: 600px)  */
-/* @include media-breakpoint-down(sm)  */
+/* @media screen and (max-width: 576px) */
+/* @include media-breakpoint-down(sm) */
 @media (max-width: 576px) {
   /* Nav-bar */
 
@@ -29,7 +29,8 @@
 
   /* fix container width with mobile screen*/
   .container {
-    max-width: 350px !important;
+    /* max-width: 100%; */
+    width: 100%;
     padding: 30px 10px !important;
   }
 

@@ -27,8 +27,10 @@
   background: #f8f9fa;
 }
 
-section > .container {
-  width: 1170px;
+/* section >  */
+.container {
+  /* width: 1170px; */
+  width: 100%;
   margin: 0 auto;
   /* display: ; */
   padding: 30px 50px;
@@ -224,12 +226,12 @@ html {
   background: #f8f9fa;
 }
 
-section > .container {
+/* section > .container {
   width: 1170px;
   margin: 0 auto;
-  /* display: ; */
+  /* display: ; 
   padding: 30px 50px;
-}
+} */
 
 .section-title {
   font-size: 24px;
@@ -491,7 +493,7 @@ ul li {
   padding: 32px 8px 24px 48px;
 }
 
-.sub-title::before {
+.about-section.sub-title::before {
   content: "";
   position: absolute;
   width: 8px;
