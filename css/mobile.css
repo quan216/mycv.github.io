@@ -86,10 +86,10 @@
     align-items: flex-start;
   }
 
-  .SNS-icon {
-    transform: scale(2);
-  }
-  .SNS {
-    gap: 10px;
+  li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-justify: center;
   }
 }

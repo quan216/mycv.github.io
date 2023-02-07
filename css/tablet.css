@@ -48,4 +48,11 @@
     align-items: center;
     padding-left: 0;
   }
+
+  .SNS li {
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+    /* transform: scale(2); */
+  }
 }
