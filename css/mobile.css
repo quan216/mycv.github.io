@@ -86,7 +86,10 @@
     align-items: flex-start;
   }
 
+  .SNS-icon {
+    transform: scale(2);
+  }
   .SNS {
-    gap: 20px;
+    gap: 10px;
   }
 }
